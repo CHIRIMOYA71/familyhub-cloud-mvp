@@ -43,7 +43,7 @@ const colorOf = (cid) => COLORS.find((c) => c.id === cid) || COLORS[0];
 
 const TR = {
   ko: {
-    locale: "ko-KR", appName: "Juntos", mom: "엄마", dad: "아빠", family: "가족",
+    locale: "ko-KR", appName: "NoaFam", mom: "엄마", dad: "아빠", family: "가족",
     tabs: { home: "홈", baby: "육아", shop: "살림", board: "우리 이야기", cal: "일정" },
     settings: "설정", language: "언어", iAm: "나는", close: "닫기", logout: "로그아웃",
     homeWidgets: "홈 화면 구성 · 순서", reorderHint: "▲▼로 순서 변경 · 토글로 표시",
@@ -71,7 +71,7 @@ const TR = {
     act: { feeding: "수유", breakfast: "아침", lunch: "점심", dinner: "저녁", snack: "간식", nap: "낮잠", bed: "취침", wake: "기상", diaper: "기저귀", shower: "샤워", bath: "목욕" },
   },
   es: {
-    locale: "es-DO", appName: "Juntos", mom: "Mamá", dad: "Papá", family: "Familia",
+    locale: "es-DO", appName: "NoaFam", mom: "Mamá", dad: "Papá", family: "Familia",
     tabs: { home: "Inicio", baby: "Bebé", shop: "Casa", board: "Nosotros", cal: "Agenda" },
     settings: "Ajustes", language: "Idioma", iAm: "Soy", close: "Cerrar", logout: "Salir",
     homeWidgets: "Inicio · orden", reorderHint: "▲▼ para ordenar · toca para mostrar",
@@ -99,7 +99,7 @@ const TR = {
     act: { feeding: "Toma", breakfast: "Desayuno", lunch: "Almuerzo", dinner: "Cena", snack: "Merienda", nap: "Siesta", bed: "A dormir", wake: "Despertar", diaper: "Pañal", shower: "Ducha", bath: "Baño" },
   },
   en: {
-    locale: "en-US", appName: "Juntos", mom: "Mom", dad: "Dad", family: "Family",
+    locale: "en-US", appName: "NoaFam", mom: "Mom", dad: "Dad", family: "Family",
     tabs: { home: "Home", baby: "Baby", shop: "House", board: "Us", cal: "Agenda" },
     settings: "Settings", language: "Language", iAm: "I am", close: "Close", logout: "Log out",
     homeWidgets: "Home · order", reorderHint: "▲▼ to reorder · tap to show",
@@ -134,7 +134,7 @@ const QUOTES = [
   { ko: "가족은 중요한 게 아니다. 전부다.", es: "La familia no es importante. Lo es todo.", en: "Family is not an important thing. It's everything.", author: "Michael J. Fox" },
   { ko: "사랑은 가정에서 시작된다.", es: "El amor comienza en casa.", en: "Love begins at home.", author: "Teresa de Calcuta" },
   { ko: "깊이 사랑받으면 힘이 생기고, 깊이 사랑하면 용기가 생긴다.", es: "Ser amado da fuerza; amar da valor.", en: "Being loved gives strength; loving gives courage.", author: "Lao Tse" },
-  { ko: "사랑은 서로 바라보는 게 아니라 같은 곳을 함께 보는 것이다.", es: "Amar es mirar juntos en la misma direccion.", en: "Love is looking together in the same direction.", author: "A. de Saint-Exupery" },
+  { ko: "사랑은 서로 바라보는 게 아니라 같은 곳을 함께 보는 것이다.", es: "Amar es mirar NoaFam en la misma direccion.", en: "Love is looking together in the same direction.", author: "A. de Saint-Exupery" },
   { ko: "빨리 가려면 혼자, 멀리 가려면 함께 가라.", es: "Si quieres llegar lejos, ve acompanado.", en: "If you want to go far, go together.", author: "Proverbio africano" },
 ];
 
@@ -145,7 +145,7 @@ const uid = () => Math.random().toString(36).slice(2) + Date.now().toString(36);
 function normalize(s) {
   s = s || {};
   return {
-    familyName: s.familyName || "Juntos",
+    familyName: s.familyName || "NoaFam",
     lang: s.lang || "ko",
     user: s.user || "mom",
     homeOrder: s.homeOrder || [
