@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Home, Baby, ShoppingCart, MessageCircle, Calendar, Milk, Moon, Droplet, Heart, Plus, Check, X, Trash2, Refrigerator, Syringe, Clock, Settings, Quote, Edit3, CheckSquare, Utensils, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, FileText, Bell, Sparkles, Languages, Send, TrendingUp, Cloud, CloudOff } from "lucide-react";
 
 const ACT = {
