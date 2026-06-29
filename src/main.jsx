@@ -90,7 +90,7 @@ function Root() {
       <div className="fh-app min-h-screen flex justify-center" style={{ background: "#EDE6DD" }}>
         <div className="w-full max-w-md min-h-screen flex flex-col" style={{ background: BG_PAGE }}>
           <div className="text-white px-5 pt-8 pb-6" style={{ backgroundImage: HEADER_GRAD }}>
-            <p className="text-xs opacity-90">Juntos</p>
+            <p className="text-xs opacity-90">NoaFam</p>
             <h1 className="text-xl font-bold ff-title mt-1">가족 공간 열기</h1>
             <p className="text-xs opacity-90 mt-1">컴퓨터를 꺼도 폰에서 함께 쓰는 클라우드 버전</p>
           </div>
