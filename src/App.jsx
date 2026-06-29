@@ -134,7 +134,7 @@ const QUOTES = [
   { ko: "가족은 중요한 게 아니다. 전부다.", es: "La familia no es importante. Lo es todo.", en: "Family is not an important thing. It's everything.", author: "Michael J. Fox" },
   { ko: "사랑은 가정에서 시작된다.", es: "El amor comienza en casa.", en: "Love begins at home.", author: "Teresa de Calcuta" },
   { ko: "깊이 사랑받으면 힘이 생기고, 깊이 사랑하면 용기가 생긴다.", es: "Ser amado da fuerza; amar da valor.", en: "Being loved gives strength; loving gives courage.", author: "Lao Tse" },
-  { ko: "사랑은 서로 바라보는 게 아니라 같은 곳을 함께 보는 것이다.", es: "Amar es mirar NoaFam en la misma direccion.", en: "Love is looking together in the same direction.", author: "A. de Saint-Exupery" },
+  { ko: "사랑은 서로 바라보는 게 아니라 같은 곳을 함께 보는 것이다.", es: "Amar es mirar juntos en la misma direccion.", en: "Love is looking together in the same direction.", author: "A. de Saint-Exupery" },
   { ko: "빨리 가려면 혼자, 멀리 가려면 함께 가라.", es: "Si quieres llegar lejos, ve acompanado.", en: "If you want to go far, go together.", author: "Proverbio africano" },
 ];
 
