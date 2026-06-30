@@ -139,6 +139,8 @@ const QUOTES = [
 ];
 
 const uid = () => Math.random().toString(36).slice(2) + Date.now().toString(36);
+const BG_CARD_BG = "#FFFDFB";
+const Section = ({ children }) => <div className="border border-gray-100 rounded-2xl p-4 shadow-sm" style={{ background: BG_CARD_BG }}>{children}</div>;
 
 // ===== 서버 state(JSONB) <-> 앱 구조 정규화 =====
 // 백엔드 state.js 기본 포맷과 호환되게 보정. 누락 필드는 기본값 채움.
@@ -377,7 +379,6 @@ export default function FamilyHub({ serverState, onUpdate, status, aiCall }) {
   const tabs = [{ id: "home", icon: Home }, { id: "baby", icon: Baby }, { id: "shop", icon: ShoppingCart }, { id: "board", icon: MessageCircle }, { id: "cal", icon: Calendar }];
   const ByTag = ({ by }) => { const c = by === "mom" ? "bg-teal-100 text-teal-700" : by === "dad" ? "bg-sky-100 text-sky-700" : "bg-amber-100 text-amber-700"; return <span className={`text-xs px-2 py-0.5 rounded-full ${c}`}>{roleName(by)}</span>; };
   const ownerBar = (by) => (by === "mom" ? "border-l-teal-300" : by === "dad" ? "border-l-sky-300" : "border-l-amber-300");
-  const Section = ({ children }) => <div className="border border-gray-100 rounded-2xl p-4 shadow-sm" style={{ background: BG_CARD }}>{children}</div>;
   const homeCards = [{ types: ["feeding"], icon: Milk, c: "bg-teal-100 text-teal-600", label: t.act.feeding }, { types: ["nap", "bed"], icon: Moon, c: "bg-violet-100 text-violet-500", label: t.sleepCat }, { types: ["diaper"], icon: Droplet, c: "bg-amber-100 text-amber-600", label: t.act.diaper }];
 
   const NoteCard = ({ n, big }) => (
